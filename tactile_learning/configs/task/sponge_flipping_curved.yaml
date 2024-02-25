@@ -1,0 +1,19 @@
+# TAVI
+image_out_dir: /home/irmak/Workspace/tactile-learning/tactile_learning/out/2023.10.31/18-42_sponge_flipping_successful_temporal_ssl
+image_model_type: temporal
+
+vinn_image_out_dir: null
+vinn_image_model_type: byol
+
+data_path: /data/franka_curved_xela/sponge_flipping/successful/
+
+name: sponge_flipping
+task_name: SpongeFlipping-v2
+camera_num: 1
+
+expert_demo_nums: [52]
+arm_offset_scale_factor: 0.06
+hand_offset_scale_factor: 0.28 #sponge flipping
+offset_mask: [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] # sponge flipping
+
+action_type: robot

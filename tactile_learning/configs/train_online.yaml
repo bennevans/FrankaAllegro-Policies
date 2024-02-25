@@ -1,0 +1,79 @@
+defaults:
+  # - agent: android_tavi #tavi # Optimizer will be initialized inside the agent
+  # - base_policy: human_retargeter # human_retargeter
+  - agent: tavi
+  - rl_learner: drqv2
+  - base_policy: openloop
+  - explorer: ou_noise
+  - rewarder: sinkhorn_cosine # Type of the reward 
+  - task: tea_picking
+  - suite: gym
+
+data_path: ${task.data_path}
+image_out_dir: ${task.image_out_dir} # resnet - plier picking 
+image_model_type: ${task.image_model_type} # TODO: Add this information to the config - or get it from the learner type and etc
+
+vinn_cont_steps: 10
+vinn_no_change_in_demo: False # If set to true demo will not change at each time step - it will only change in the beginning
+
+# tactile_out_dir: /home/irmak/Workspace/tactile-learning/tactile_learning/out/2023.10.10/21-43_curved_tactile_byol 
+# tactile_model_type: byol
+
+tactile_out_dir: ${task.tactile_out_dir}
+tactile_model_type: ${task.tactile_model_type}
+
+
+
+reward_representations: ['image']
+policy_representations: ['image', 'tactile', 'features']
+data_representations: ['image', 'allegro', 'tactile', 'franka'] # features = allegro + kinova, image and tactile is added
+
+seed: 42 
+device: cuda:0
+frequency: 5
+
+num_train_frames: 10000 # Total training numbers
+num_seed_frames: 800 # Frames until training starts 
+num_expl_steps: 800 # ${num_seed_frames} # Frames of full exploration
+eval_every_frames: 600  # Evaluate in each every 600 frames
+num_eval_episodes: 20
+evaluate: True
+max_steps: 100
+
+buffer_path: null
+
+# FISH and environment params
+expert_id: 0
+expert_demo_nums: ${task.expert_demo_nums}
+episode_frame_matches: 10
+expert_frame_matches: 1
+camera_num: ${task.camera_num}
+
+# Agent params 
+bc_regularize: False
+features_repeat: 5 # Number to how many times to repeat the features as the input to the model
+
+# Replay buffer params
+replay_buffer_size: 150000
+replay_buffer_num_workers: 2
+nstep: 3
+batch_size: 256
+
+# Recorder
+save_eval_video: False
+save_train_video: False 
+save_train_cost_matrices: True
+
+# Snapshot loading
+load_snapshot: True
+snapshot_weight: /home/aadhithya/Workspace/tactile-learning/weights/snapshot_tea_picking_thumb_index.pt
+
+
+log: True
+experiment: ${now:%Y.%m.%d}T${now:%H-%M}_${task.name}_${rl_learner.name}_${base_policy.name}
+
+# hydra configuration - should be received separately
+hydra:
+    run:
+        dir: /home/aadhithya/Workspace/tactile-learning/tactile_learning/out/${now:%Y.%m.%d}/${now:%H-%M}_${experiment}
+

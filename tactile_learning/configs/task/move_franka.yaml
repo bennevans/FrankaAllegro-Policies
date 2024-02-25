@@ -1,0 +1,19 @@
+image_out_dir: null
+image_model_type: temporal 
+
+vinn_image_out_dir: null
+vinn_image_model_type: byol
+
+data_path: /home/irmak/Workspace/Holo-Bot/extracted_data/franka_data_first
+
+name: move_franka
+task_name: MoveFranka-v1
+camera_num: 1
+
+expert_demo_nums: [33] # [24]
+hand_offset_scale_factor: null # Theoritcally this should not be called
+arm_offset_scale_factor: 0.2
+offset_mask: [1, 0, 0, 0, 0, 0, 0]
+
+action_type: robot
+

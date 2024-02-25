@@ -1,0 +1,44 @@
+defaults:
+    - encoder: temporal_ssl
+    - learner: temporal_ssl
+    - dataset: temporal_joint_diff_dataset
+    - optimizer: adam 
+
+seed: 42
+device: 3
+
+
+data_representations: ['image','allegro', 'franka']
+learner_type: temporal_ssl # Can be bet, image_byol, tactile_stacked_byol # tactile_stacked_byol tactile_linear_byol, bc, tactile_byol
+self_supervised: false
+
+# Demos to use 
+demos_to_use: [21,23,24,38,39]
+
+# Hyperparameters to be used everywhere
+batch_size: 32
+tactile_image_size: 64 # 224 # This could be changed for stacked or shared architectures
+vision_image_size: 480
+vision_view_num: 2
+train_epochs: 1000
+save_frequency: 10
+train_dset_split: 0.95
+
+distributed: false
+num_workers: 4
+
+# Data path to be set
+# object: mint_opening
+# experiment: ${learner_type}_${object}_view_${vision_view_num} # For now let's only train resnet
+experiment: finger_gaiting_${learner_type}
+data_dir: /data/generalization/honda_finger_gait_working_view_2
+checkpoint_dir: ??? # Will be set to hydra dir inside the code
+
+# logger
+logger: true # To init logger or not
+log_frequency: 1
+
+# hydra configuration - should be received separately
+hydra:
+    run:
+        dir: /home/aadhithya/Workspace/tactile-learning/tactile_learning/out/${now:%Y.%m.%d}/${now:%H-%M}_${experiment}

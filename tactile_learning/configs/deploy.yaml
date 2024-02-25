@@ -1,0 +1,10 @@
+defaults:
+  - deployer: openloop # This fails almost anywhere! 
+
+visualize: false
+loop: true
+frequency: 4
+deployment_dump_dir: null
+demo_to_run: 1
+data_representations: ['image', 'allegro', 'franka']
+data_path: /data/sponge_picking_final_3/ #/data/infra_test_dataset/R0B1B_test

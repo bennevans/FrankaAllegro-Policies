@@ -1,0 +1,18 @@
+image_out_dir: null
+image_model_type: temporal 
+
+vinn_image_out_dir: null
+vinn_image_model_type: byol
+
+data_path: /data/sr_test
+
+name: state_recognition_sr_test
+task_name: StateRecognitionR1B0R
+camera_num: 1
+
+expert_demo_nums: [1] # [24]
+hand_offset_scale_factor: 0.3 
+arm_offset_scale_factor: 0.2
+offset_mask: [0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+
+action_type: robot
