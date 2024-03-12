@@ -1,5 +1,5 @@
 # @package agent
-_target_: tactile_learning.agents.AndroidTAVI
+_target_: franka_allegro.agents.AndroidTAVI
 # Base policy parameters
 data_path: ${data_path} # Path to hold all the preprocessed demos
 expert_demo_nums: ${expert_demo_nums} # Demo to get the base action from

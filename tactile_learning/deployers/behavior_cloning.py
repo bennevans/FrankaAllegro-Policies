@@ -22,9 +22,9 @@ from holobot.robot.allegro.allegro_kdl import AllegroKDL
 
 from torchvision.transforms.functional import crop
 
-from tactile_learning.models import load_model
-from tactile_learning.utils import *
-from tactile_learning.tactile_data import *
+from franka_allegro.models import load_model
+from franka_allegro.utils import *
+from franka_allegro.tactile_data import *
 
 from .deployer import Deployer
 

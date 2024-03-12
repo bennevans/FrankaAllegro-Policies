@@ -12,9 +12,9 @@ from holobot.robot.allegro.allegro_kdl import AllegroKDL
 from holobot.utils.network import ZMQCameraSubscriber
 from PIL import Image as im
 
-from tactile_learning.tactile_data import TactileImage, TactileRepresentation
-from tactile_learning.models import init_encoder_info
-from tactile_learning.utils import *
+from franka_allegro.tactile_data import TactileImage, TactileRepresentation
+from franka_allegro.models import init_encoder_info
+from franka_allegro.utils import *
 
 from .env import DexterityEnv
 

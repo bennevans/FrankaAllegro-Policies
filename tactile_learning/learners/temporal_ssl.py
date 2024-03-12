@@ -4,7 +4,7 @@
 import os
 import torch
 
-from tactile_learning.utils import mse, l1
+from franka_allegro.utils import mse, l1
 
 from info_nce import InfoNCE
 

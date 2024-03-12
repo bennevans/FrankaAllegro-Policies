@@ -1,4 +1,4 @@
-_target_: tactile_learning.datasets.tactile.TactileSmallDataset
+_target_: franka_allegro.datasets.tactile.TactileSmallDataset
 data_path: ???
 sensor_grid: [1,2]
 sensor_indices: [3,7]

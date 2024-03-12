@@ -1,7 +1,7 @@
 import glob
 
 
-from tactile_learning.datasets import *
+from franka_allegro.datasets import *
 # Main preprocessor module
 # It gets each module's preprocessor, and preprocesses all of them
 

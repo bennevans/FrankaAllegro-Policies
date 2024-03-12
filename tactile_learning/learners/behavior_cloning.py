@@ -3,7 +3,7 @@ import torch
 
 # Custom imports 
 from .learner import Learner
-from tactile_learning.utils import mse, l1
+from franka_allegro.utils import mse, l1
 
 # Learner to get current state and predict the action applied
 # It will learn in supervised way

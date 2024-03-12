@@ -15,9 +15,9 @@ from holobot.constants import *
 
 from holobot.robot.allegro.allegro_kdl import AllegroKDL
 
-from tactile_learning.models import *
-from tactile_learning.tactile_data import *
-from tactile_learning.utils import *
+from franka_allegro.models import *
+from franka_allegro.tactile_data import *
+from franka_allegro.utils import *
 
 from .deployer import Deployer
 from .utils.nn_buffer import NearestNeighborBuffer

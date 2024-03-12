@@ -8,9 +8,9 @@ from torch.distributions import Categorical, Normal
 
 from holobot.constants import *
 
-from tactile_learning.models import load_model, init_encoder_info
-from tactile_learning.utils import *
-from tactile_learning.tactile_data import *
+from franka_allegro.models import load_model, init_encoder_info
+from franka_allegro.utils import *
+from franka_allegro.tactile_data import *
 
 from .deployer import Deployer
 

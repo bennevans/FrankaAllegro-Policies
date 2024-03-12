@@ -8,7 +8,7 @@ import pickle
 from pathlib import Path
 from collections import deque
 
-from tactile_learning.utils import VideoRecorder
+from franka_allegro.utils import VideoRecorder
 
 env_names = ["hammer-v2", "drawer-close-v2", "drawer-open-v2", "door-open-v2", "bin-picking-v2", "button-press-topdown-v2", "door-unlock-v2"]
 num_demos = 1

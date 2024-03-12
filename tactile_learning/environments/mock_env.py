@@ -9,7 +9,7 @@ import numpy as np
 from typing import Any, NamedTuple
 from dm_env import StepType, specs, TimeStep
 
-from tactile_learning.utils import get_inverse_image_norm
+from franka_allegro.utils import get_inverse_image_norm
 
 class Spec:
     max_episode_steps = 70

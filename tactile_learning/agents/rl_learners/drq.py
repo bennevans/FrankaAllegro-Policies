@@ -7,8 +7,8 @@ import torch.nn.functional as F
 
 import numpy as np
 
-from tactile_learning.models.utils import weight_init, mlp
-from tactile_learning.utils import SquashedNormal, TruncatedNormal, soft_update_params, to_np
+from franka_allegro.models.utils import weight_init, mlp
+from franka_allegro.utils import SquashedNormal, TruncatedNormal, soft_update_params, to_np
 
 from .rl_learner import RLLearner
 

@@ -41,4 +41,4 @@ log_frequency: 1
 # hydra configuration - should be received separately
 hydra:
     run:
-        dir: /home/aadhithya/Workspace/tactile-learning/tactile_learning/out/${now:%Y.%m.%d}/${now:%H-%M}_${experiment}
+        dir: /home/aadhithya/Workspace/tactile-learning/franka_allegro/out/${now:%Y.%m.%d}/${now:%H-%M}_${experiment}

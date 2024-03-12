@@ -1,4 +1,4 @@
-image_out_dir: /home/irmak/Workspace/tactile-learning/tactile_learning/out/2023.10.24/12-33_generalization_temporal_ssl
+image_out_dir: /home/irmak/Workspace/tactile-learning/franka_allegro/out/2023.10.24/12-33_generalization_temporal_ssl
 image_model_type: temporal 
 
 vinn_image_out_dir: null

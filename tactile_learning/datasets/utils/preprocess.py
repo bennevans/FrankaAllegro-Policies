@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 from holobot.robot.allegro.allegro_kdl import AllegroKDL
 
-from tactile_learning.utils import PREPROCESS_MODALITY_LOAD_NAMES, MODALITY_TYPES
+from franka_allegro.utils import PREPROCESS_MODALITY_LOAD_NAMES, MODALITY_TYPES
 
 
 

@@ -5,7 +5,7 @@ import os
 from holobot.constants import *
 
 from .deployer import Deployer
-from tactile_learning.utils import load_data
+from franka_allegro.utils import load_data
 
 class OpenLoop(Deployer):
     def __init__(

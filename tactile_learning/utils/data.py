@@ -7,7 +7,7 @@ import torch
 
 from torchvision.datasets.folder import default_loader as loader
 from tqdm import tqdm
-from tactile_learning.utils import MODALITY_TYPES, PREPROCESS_MODALITY_DUMP_NAMES, PREPROCESS_MODALITY_LOAD_NAMES
+from franka_allegro.utils import MODALITY_TYPES, PREPROCESS_MODALITY_DUMP_NAMES, PREPROCESS_MODALITY_LOAD_NAMES
 
 # Load human data 
 def load_human_data(roots, demos_to_use=[], duration=120):

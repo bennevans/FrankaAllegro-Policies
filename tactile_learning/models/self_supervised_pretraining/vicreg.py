@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from tactile_learning.utils import vicreg_loss
+from franka_allegro.utils import vicreg_loss
 
 # Taken from dexVR github repo
 class VICReg(nn.Module):

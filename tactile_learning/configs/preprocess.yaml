@@ -1,6 +1,6 @@
 
 preprocessor_module:
-  _target_: tactile_learning.preprocess.Preprocessor
+  _target_: franka_allegro.preprocess.Preprocessor
   data_path: /data/christmas_box/
   modules:
     robot: ${robot_cfg}
@@ -10,7 +10,7 @@ preprocessor_module:
   process_single_demo: false
 
 robot_cfg:
-  _target_: tactile_learning.preprocess.RobotPreprocessor
+  _target_: franka_allegro.preprocess.RobotPreprocessor
   subsample_separately: true
   robot_names: ['allegro', 'franka']
   robot_thresholds: # If robot thresholds are set to 0 then it will basically not subsample
@@ -19,11 +19,11 @@ robot_cfg:
   dump_fingertips: true
 
 image_cfg:
-  _target_: tactile_learning.preprocess.ImagePreprocessor
+  _target_: franka_allegro.preprocess.ImagePreprocessor
   camera_id: 0
   is_ssl: false
   time_difference: 1 # If the there is no set time difference we will not apply preprocessing for images
 
 tactile_cfg:
-  _target_: tactile_learning.preprocess.TouchPreprocessor
+  _target_: franka_allegro.preprocess.TouchPreprocessor
 

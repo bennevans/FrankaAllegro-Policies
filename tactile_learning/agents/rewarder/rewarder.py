@@ -6,7 +6,7 @@ import torch
 
 from abc import ABC, abstractmethod
 
-from tactile_learning.utils import get_inverse_image_norm
+from franka_allegro.utils import get_inverse_image_norm
 
 class Rewarder(ABC):
     def __init__(

@@ -3,7 +3,7 @@
 import torch.nn as nn
 # import utils
 
-from tactile_learning.models import weight_init
+from franka_allegro.models import weight_init
 
 # Module to print out the shape of the conv layer - used to debug
 class PrintSize(nn.Module):

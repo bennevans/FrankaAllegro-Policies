@@ -1,4 +1,4 @@
-name: tactile_learning
+name: franka_allegro
 channels: 
   - conda-forge
   - pytorch

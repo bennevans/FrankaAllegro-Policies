@@ -5,9 +5,9 @@ from abc import ABC, abstractmethod
 from PIL import Image as im
 
 from holobot.utils.network import ZMQCameraSubscriber
-from tactile_learning.utils import *
-from tactile_learning.tactile_data import *
-from tactile_learning.models import init_encoder_info
+from franka_allegro.utils import *
+from franka_allegro.tactile_data import *
+from franka_allegro.models import init_encoder_info
 
 # Base class for all deployment modules
 class Deployer(ABC):

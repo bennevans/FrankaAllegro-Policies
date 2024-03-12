@@ -4,8 +4,8 @@ import torchvision.transforms as T
 
 from torch.utils import data
 
-from tactile_learning.tactile_data import TactileImage, TactileImageCurved
-from tactile_learning.utils import load_data
+from franka_allegro.tactile_data import TactileImage, TactileImageCurved
+from franka_allegro.utils import load_data
 
 class TactileSSLDataset(data.Dataset):
     # Dataset for all possible tactile types (stacked, whole hand, one sensor)

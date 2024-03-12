@@ -4,7 +4,7 @@ augmentation:
   color_jitter_const: 1
 
 projector:
-  _target_: tactile_learning.models.create_fc
+  _target_: franka_allegro.models.create_fc
   input_dim: ???
   output_size: 8192
   hidden_sizes: [8192]

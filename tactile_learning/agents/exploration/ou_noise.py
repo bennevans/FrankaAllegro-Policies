@@ -2,7 +2,7 @@ import numpy as np
 import torch
 
 from .explorer import Explorer
-from tactile_learning.utils import OrnsteinUhlenbeckActionNoise
+from franka_allegro.utils import OrnsteinUhlenbeckActionNoise
 
 class OUNoise(Explorer):
     def __init__(

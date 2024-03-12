@@ -7,7 +7,7 @@ import torchvision.transforms as T
 
 from copy import deepcopy as copy
 
-from tactile_learning.utils import tactile_clamp_transform, tactile_scale_transform
+from franka_allegro.utils import tactile_clamp_transform, tactile_scale_transform
 
 # Class to retrieve tactile images depending on the type
 class TactileImage:

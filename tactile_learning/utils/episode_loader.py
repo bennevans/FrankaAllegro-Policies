@@ -14,9 +14,9 @@ from torchvision import transforms as T
 from PIL import Image
 # from agent.encoder import Encoder
 
-from tactile_learning.models import init_encoder_info, crop_transform
-from tactile_learning.utils import load_dataset_image, VISION_IMAGE_MEANS, VISION_IMAGE_STDS
-from tactile_learning.tactile_data import *
+from franka_allegro.models import init_encoder_info, crop_transform
+from franka_allegro.utils import load_dataset_image, VISION_IMAGE_MEANS, VISION_IMAGE_STDS
+from franka_allegro.tactile_data import *
 
 def load_one_episode(fn):
     with open(fn, 'rb') as f:

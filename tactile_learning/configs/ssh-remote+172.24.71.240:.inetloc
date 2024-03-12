@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>URL</key>
-	<string>vscode-remote://ssh-remote%2B172.24.71.240/home/aadhithya/Workspace/tactile-learning/tactile_learning/configs/train_multitask.yaml</string>
+	<string>vscode-remote://ssh-remote%2B172.24.71.240/home/aadhithya/Workspace/tactile-learning/franka_allegro/configs/train_multitask.yaml</string>
 </dict>
 </plist>

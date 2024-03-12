@@ -16,7 +16,7 @@ ALLEGRO_JOINT_NUM = 16
 ALLEGRO_EE_REPR_SIZE = 12 
 
 # Play data path - should be changed 
-PLAY_DATA_PATH = '/data/tactile_learning/play_data'
+PLAY_DATA_PATH = '/data/franka_allegro/play_data'
 
 # Constants for the IBC training
 THUMB_JOINT_LIMITS = [

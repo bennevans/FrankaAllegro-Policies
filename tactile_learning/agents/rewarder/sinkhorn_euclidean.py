@@ -4,7 +4,7 @@ import numpy as np
 import torch 
 import sys
 
-from tactile_learning.utils import euclidean_distance, optimal_transport_plan
+from franka_allegro.utils import euclidean_distance, optimal_transport_plan
 
 from .rewarder import Rewarder
 

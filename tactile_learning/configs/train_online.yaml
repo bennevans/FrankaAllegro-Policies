@@ -16,7 +16,7 @@ image_model_type: ${task.image_model_type} # TODO: Add this information to the c
 vinn_cont_steps: 10
 vinn_no_change_in_demo: False # If set to true demo will not change at each time step - it will only change in the beginning
 
-# tactile_out_dir: /home/irmak/Workspace/tactile-learning/tactile_learning/out/2023.10.10/21-43_curved_tactile_byol 
+# tactile_out_dir: /home/irmak/Workspace/tactile-learning/franka_allegro/out/2023.10.10/21-43_curved_tactile_byol 
 # tactile_model_type: byol
 
 tactile_out_dir: ${task.tactile_out_dir}
@@ -75,5 +75,5 @@ experiment: ${now:%Y.%m.%d}T${now:%H-%M}_${task.name}_${rl_learner.name}_${base_
 # hydra configuration - should be received separately
 hydra:
     run:
-        dir: /home/aadhithya/Workspace/tactile-learning/tactile_learning/out/${now:%Y.%m.%d}/${now:%H-%M}_${experiment}
+        dir: /home/aadhithya/Workspace/tactile-learning/franka_allegro/out/${now:%Y.%m.%d}/${now:%H-%M}_${experiment}
 

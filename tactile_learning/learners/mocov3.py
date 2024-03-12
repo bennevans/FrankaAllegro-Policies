@@ -2,7 +2,7 @@ import os
 import torch
 
 from .learner import Learner 
-from tactile_learning.models import adjust_moco_momentum
+from franka_allegro.models import adjust_moco_momentum
 
 class MOCOLearner(Learner):
     def __init__(

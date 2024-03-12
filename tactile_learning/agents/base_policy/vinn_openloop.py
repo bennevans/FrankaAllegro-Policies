@@ -1,8 +1,8 @@
 import numpy as np
 from torchvision import transforms as T
 
-from tactile_learning.utils import VISION_IMAGE_MEANS, VISION_IMAGE_STDS
-from tactile_learning.models import init_encoder_info
+from franka_allegro.utils import VISION_IMAGE_MEANS, VISION_IMAGE_STDS
+from franka_allegro.models import init_encoder_info
 
 from .base_policy import BasePolicy
 

@@ -4,8 +4,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from tactile_learning.utils import TruncatedNormal, schedule
-from tactile_learning.models import weight_init
+from franka_allegro.utils import TruncatedNormal, schedule
+from franka_allegro.models import weight_init
 
 from .rl_learner import RLLearner
 

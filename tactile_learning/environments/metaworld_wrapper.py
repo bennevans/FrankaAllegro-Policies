@@ -14,7 +14,7 @@ import numpy as np
 from dm_env import StepType, specs, TimeStep
 from dm_control.utils import rewards
 
-from tactile_learning.utils import VideoRecorder
+from franka_allegro.utils import VideoRecorder
 from pathlib import Path
 
 import cv2

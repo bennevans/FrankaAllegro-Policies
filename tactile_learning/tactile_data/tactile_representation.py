@@ -8,8 +8,8 @@ import torchvision.transforms as T
 from sklearn.decomposition import PCA as sklearn_PCA
 from tqdm import tqdm
 
-from tactile_learning.utils import load_data
-from tactile_learning.utils import PLAY_DATA_PATH, TACTILE_IMAGE_MEANS, TACTILE_IMAGE_STDS
+from franka_allegro.utils import load_data
+from franka_allegro.utils import PLAY_DATA_PATH, TACTILE_IMAGE_MEANS, TACTILE_IMAGE_STDS
 
 # Class for receiving tactile representation
 

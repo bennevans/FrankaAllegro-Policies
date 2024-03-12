@@ -9,7 +9,7 @@ from omegaconf import OmegaConf
 from torch.nn.parallel import DistributedDataParallel as DDP
 
 from .pretrained import resnet18, alexnet
-from tactile_learning.utils import crop_transform, VISION_IMAGE_MEANS, VISION_IMAGE_STDS
+from franka_allegro.utils import crop_transform, VISION_IMAGE_MEANS, VISION_IMAGE_STDS
 
 # Taken from https://github.com/SridharPandian/Holo-Dex/blob/main/holodex/utils/models.py
 def create_fc(input_dim, output_dim, hidden_dims, use_batchnorm=False, dropout=None, is_moco=False):

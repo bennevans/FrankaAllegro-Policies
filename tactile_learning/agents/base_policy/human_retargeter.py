@@ -13,8 +13,8 @@ from holobot.utils.files import *
 from holobot.utils.timer import FrequencyTimer
 from holobot.constants import *
 
-# tactile_Learning imports
-from tactile_learning.utils import load_human_data
+# franka_allegro imports
+from franka_allegro.utils import load_human_data
 
 from .base_policy import BasePolicy
 

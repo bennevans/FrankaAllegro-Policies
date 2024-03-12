@@ -4,10 +4,10 @@
 import numpy as np
 import torch
 
-from tactile_learning.models import *
-from tactile_learning.utils import *
-from tactile_learning.tactile_data import *
-from tactile_learning.deployers.utils.nn_buffer import NearestNeighborBuffer
+from franka_allegro.models import *
+from franka_allegro.utils import *
+from franka_allegro.tactile_data import *
+from franka_allegro.deployers.utils.nn_buffer import NearestNeighborBuffer
 
 from .base_policy import BasePolicy
 from .vinn import VINN

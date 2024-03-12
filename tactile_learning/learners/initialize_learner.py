@@ -11,8 +11,8 @@ from .mocov3 import MOCOLearner
 from .simclr import SIMCLRLearner
 from .temporal_ssl import TemporalSSLLearner
 
-from tactile_learning.utils import *
-from tactile_learning.models import  *
+from franka_allegro.utils import *
+from franka_allegro.models import  *
 
 def init_learner(cfg, device, rank=0):
     if cfg.learner_type == 'bc':

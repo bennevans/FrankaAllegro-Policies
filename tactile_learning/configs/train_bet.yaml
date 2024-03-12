@@ -15,7 +15,7 @@ tactile_image_size: 480 # It has to be the same as vision image
 distributed: false
 
 dataset:
-  _target_: tactile_learning.datasets.sequential.SequentialDataset
+  _target_: franka_allegro.datasets.sequential.SequentialDataset
   data_path: ${data_dir}
   seq_length: 10
   tactile_information_type: whole_hand
@@ -51,7 +51,7 @@ num_final_evals: 20
 # num_final_eval_per_goal: 5
 
 wandb:
-  project: "tactile_learning"
+  project: "franka_allegro"
   exp_name: 'bet_trainings'
   # entity: ${env_vars.wandb_entity}
 

@@ -1,4 +1,4 @@
-_target_: tactile_learning.deployers.OpenLoop
+_target_: franka_allegro.deployers.OpenLoop
 data_path: ???
 apply_hand_states: false # For fingers touching yourself this should be true
 demo_to_run: ${demo_to_run}

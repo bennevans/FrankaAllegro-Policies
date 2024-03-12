@@ -128,8 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-tactile_learning.egg-info/*
-tactile_learning/out/*
+franka_allegro.egg-info/*
+franka_allegro/out/*
 outputs/*
 wandb/*
 .vscode/*
@@ -154,7 +154,7 @@ weights/*
 
 debuggers/outputs/*
 
-tactile_learning/action_priors/*
+franka_allegro/action_priors/*
 deployment_data/*
 
-tactile_learning/debugging/outputs/*
+franka_allegro/debugging/outputs/*

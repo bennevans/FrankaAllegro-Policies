@@ -3,7 +3,7 @@ import numpy as np
 import torch 
 import sys
 
-from tactile_learning.utils import get_inverse_image_norm, structural_similarity_index
+from franka_allegro.utils import get_inverse_image_norm, structural_similarity_index
 
 from .rewarder import Rewarder
 

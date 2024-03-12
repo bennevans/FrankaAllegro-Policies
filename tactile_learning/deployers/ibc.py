@@ -17,9 +17,9 @@ from holobot.constants import *
 from holobot.utils.network import ZMQCameraSubscriber
 from holobot.robot.allegro.allegro_kdl import AllegroKDL
 
-from tactile_learning.models import load_model, resnet18, alexnet, ScaledKNearestNeighbors, EBMMLP
-from tactile_learning.tactile_data import *
-from tactile_learning.utils import *
+from franka_allegro.models import load_model, resnet18, alexnet, ScaledKNearestNeighbors, EBMMLP
+from franka_allegro.tactile_data import *
+from franka_allegro.utils import *
 
 from .deployer import Deployer
 

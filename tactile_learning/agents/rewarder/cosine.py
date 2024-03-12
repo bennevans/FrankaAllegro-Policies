@@ -5,7 +5,7 @@ import sys
 
 import torch.nn.functional as F
 
-# from tactile_learning.utils import cosine_distance, optimal_transport_plan
+# from franka_allegro.utils import cosine_distance, optimal_transport_plan
 
 from .rewarder import Rewarder
 

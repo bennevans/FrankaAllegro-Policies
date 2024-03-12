@@ -3,7 +3,7 @@ import numpy as np
 
 from .explorer import Explorer
 
-from tactile_learning.utils import exponential_epsilon_decay
+from franka_allegro.utils import exponential_epsilon_decay
 
 class ExponentialExploration(Explorer):
     def __init__(self, **kwargs): 

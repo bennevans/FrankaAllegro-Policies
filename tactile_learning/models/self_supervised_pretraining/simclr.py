@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from tactile_learning.utils.losses import nt_xent_loss
+from franka_allegro.utils.losses import nt_xent_loss
 
 class SimCLR(nn.Module):
     def __init__(self,

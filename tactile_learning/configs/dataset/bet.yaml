@@ -1,4 +1,4 @@
-_target_: tactile_learning.datasets.SequentialRepresentationsActions
+_target_: franka_allegro.datasets.SequentialRepresentationsActions
 data_path: ???
 seq_length: 3
 demos_to_use: ${demos_to_use}

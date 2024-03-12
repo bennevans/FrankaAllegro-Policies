@@ -1,4 +1,4 @@
-_target_: tactile_learning.datasets.sequential.SequentialDataset
+_target_: franka_allegro.datasets.sequential.SequentialDataset
 data_path: ???
 seq_length: 10
 tactile_information_type: whole_hand

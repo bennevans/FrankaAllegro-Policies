@@ -446,7 +446,7 @@ def make(name, host_address, camera_num, height, width,
 if __name__ == '__main__':
 	env = make(
 		name = 'BowlUnstacking-v1',
-		tactile_out_dir = '/home/irmak/Workspace/tactile-learning/tactile_learning/out/2023.01.28/12-32_tactile_byol_bs_512_tactile_play_data_alexnet_pretrained_duration_120',
+		tactile_out_dir = '/home/irmak/Workspace/tactile-learning/franka_allegro/out/2023.01.28/12-32_tactile_byol_bs_512_tactile_play_data_alexnet_pretrained_duration_120',
 		host_address = '172.24.71.240',
 		camera_num = 0, 
 		height = 224, 
@@ -462,7 +462,7 @@ if __name__ == '__main__':
 	import random
 	import glob
 	
-	from tactile_learning.utils import load_data
+	from franka_allegro.utils import load_data
 	from holobot.robot.allegro.allegro_kdl import AllegroKDL
 	from holobot.utils.timer import FrequencyTimer
 

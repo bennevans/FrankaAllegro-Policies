@@ -3,11 +3,11 @@ import numpy as np
 import torch
 
 from tqdm import tqdm
-from tactile_learning.utils import load_human_data, load_dataset_image
+from franka_allegro.utils import load_human_data, load_dataset_image
 
 from .agent import Agent 
 from .mix_agent import MixAgent
-from tactile_learning.utils import * 
+from franka_allegro.utils import * 
 
 # Implementation for a human based data agent 
 # expert_demos will be overwritten 

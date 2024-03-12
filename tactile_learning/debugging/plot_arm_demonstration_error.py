@@ -7,7 +7,7 @@ import sys
 from tqdm import tqdm 
 
 from transform_utils import *
-from tactile_learning.utils import turn_images_to_video
+from franka_allegro.utils import turn_images_to_video
 
 np.set_printoptions(precision=2, suppress=True)
 

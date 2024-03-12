@@ -1,11 +1,11 @@
-_target_: tactile_learning.deployers.VINN
+_target_: franka_allegro.deployers.VINN
 data_path: ???
 
 # Directories to change by the user depending on where they saved the data
 deployment_dump_dir: ???
-tactile_out_dir: /home/aadhithya/Workspace/tactile-learning/tactile_learning/out/2023.12.11/09-16_sponge_picking_tactile
+tactile_out_dir: /home/aadhithya/Workspace/tactile-learning/franka_allegro/out/2023.12.11/09-16_sponge_picking_tactile
 tactile_model_type: byol
-image_out_dir: /home/aadhithya/Workspace/tactile-learning/tactile_learning/out/2023.12.10/21-49_sponge_picking
+image_out_dir: /home/aadhithya/Workspace/tactile-learning/franka_allegro/out/2023.12.10/21-49_sponge_picking
 image_model_type: temporal_ssl
 
 nn_buffer_size: 50

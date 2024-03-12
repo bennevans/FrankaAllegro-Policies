@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from tactile_learning.utils import *
+from franka_allegro.utils import *
 from .utils import *
 
 # Deep Actor Critic models

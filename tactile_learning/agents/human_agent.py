@@ -3,7 +3,7 @@ import numpy as np
 import torch
 
 from tqdm import tqdm
-from tactile_learning.utils import load_human_data, load_dataset_image
+from franka_allegro.utils import load_human_data, load_dataset_image
 
 from .agent import Agent 
 

@@ -2,7 +2,7 @@ import numpy as np
 
 from copy import deepcopy as copy
 
-from tactile_learning.utils import *
+from franka_allegro.utils import *
 
 # Custom nearest neighbor implementation
 class KNearestNeighbors(object):

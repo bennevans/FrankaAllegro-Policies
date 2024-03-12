@@ -15,12 +15,12 @@ from tqdm import tqdm
 
 from PIL import Image
 # Custom imports 
-# from tactile_learning.datasets import get_dataloaders
+# from franka_allegro.datasets import get_dataloaders
 
-# from tactile_learning.learners import init_learner
-from tactile_learning.datasets import *
-from tactile_learning.models import *
-from tactile_learning.utils import *
+# from franka_allegro.learners import init_learner
+from franka_allegro.datasets import *
+from franka_allegro.models import *
+from franka_allegro.utils import *
 
 
 class Workspace:
@@ -414,7 +414,7 @@ class Workspace:
             episode_step += 1
             self._global_step += 1 
 
-@hydra.main(version_base=None, config_path='tactile_learning/configs', config_name='train_multitask')
+@hydra.main(version_base=None, config_path='franka_allegro/configs', config_name='train_multitask')
 def main(cfg: DictConfig) -> None:
     workspace = Workspace(cfg)
 
