@@ -2,9 +2,16 @@
 
 
 
-Install the repository using the following command.
+Clone the repository using the following command.
 
 `git clone https://github.com/NYU-robot-learning/FrankaAllegro-Policies.git`
+
+Installation
+
+`mamba env create -f conda_env.yml`
+
+Install the Codebase as a module using 
+`pip install -e .`
 
 1. Collect Demos using OpenTeach.
 2. Change the path in [configs](/franka_allegro/configs/preprocess.yaml) to the path where you saved your data.
