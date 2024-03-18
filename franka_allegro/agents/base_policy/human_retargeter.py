@@ -2,16 +2,16 @@
 import glob
 
 
-# Holobot imports
+# openteach imports
 from copy import deepcopy as copy
 from shapely.geometry import Point, Polygon 
 from shapely.ops import nearest_points
-from holobot.components.operators.calibrators.allegro import OculusThumbBoundCalibrator
-from holobot.robot.allegro.allegro import AllegroHand
-from holobot.robot.allegro.allegro_retargeters import AllegroJointControl, AllegroKDLControl
-from holobot.utils.files import *
-from holobot.utils.timer import FrequencyTimer
-from holobot.constants import *
+from openteach.components.operators.calibrators.allegro import OculusThumbBoundCalibrator
+from openteach.robot.allegro.allegro import AllegroHand
+from openteach.robot.allegro.allegro_retargeters import AllegroJointControl, AllegroKDLControl
+from openteach.utils.files import *
+from openteach.utils.timer import FrequencyTimer
+from openteach.constants import *
 
 # franka_allegro imports
 from franka_allegro.utils import load_human_data
@@ -53,7 +53,7 @@ class HumanRetargeter(BasePolicy):
 
         # Getting the bounds for the allegro hand
         allegro_bounds_path = get_path_in_package(
-            '/home/irmak/Workspace/Holo-Bot/holobot/components/operators/configs/allegro.yaml'
+            '/home/irmak/Workspace/Holo-Bot/openteach/components/operators/configs/allegro.yaml'
         )
         self.allegro_bounds = get_yaml_data(allegro_bounds_path)
 

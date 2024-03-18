@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 import franka_allegro.utils.transform_utils as transform_utils # Taken from deoxys
 from .prep_module import PreprocessorModule
-from holobot.robot.allegro.allegro_kdl import AllegroKDL
+from openteach.robot.allegro.allegro_kdl import AllegroKDL
 
 # from deoxys.utils import transform_utils
 from franka_allegro.utils import MODALITY_TYPES, PREPROCESS_MODALITY_DUMP_NAMES, PREPROCESS_MODALITY_LOAD_NAMES

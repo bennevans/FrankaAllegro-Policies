@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-from holobot.utils.network import ZMQCameraSubscriber
+from openteach.utils.network import ZMQCameraSubscriber
 
 from .xela_curved_plotter import XelaCurvedPlotter
 

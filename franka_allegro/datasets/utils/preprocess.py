@@ -7,7 +7,7 @@ import shutil
 
 from tqdm import tqdm
 
-from holobot.robot.allegro.allegro_kdl import AllegroKDL
+from openteach.robot.allegro.allegro_kdl import AllegroKDL
 
 from franka_allegro.utils import PREPROCESS_MODALITY_LOAD_NAMES, MODALITY_TYPES
 

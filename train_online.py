@@ -12,7 +12,7 @@ from hydra.core.hydra_config import HydraConfig
 from omegaconf import DictConfig, OmegaConf
 from pathlib import Path
 from tqdm import tqdm 
-from holobot.utils.timer import FrequencyTimer
+from openteach.utils.timer import FrequencyTimer
 
 from PIL import Image
 # Custom imports 

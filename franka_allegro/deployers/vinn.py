@@ -11,9 +11,9 @@ import torchvision.transforms as T
 from omegaconf import OmegaConf
 from tqdm import tqdm 
 
-from holobot.constants import *
+from openteach.constants import *
 
-from holobot.robot.allegro.allegro_kdl import AllegroKDL
+from openteach.robot.allegro.allegro_kdl import AllegroKDL
 
 from franka_allegro.models import *
 from franka_allegro.tactile_data import *

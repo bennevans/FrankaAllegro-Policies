@@ -6,7 +6,7 @@ import torch
 from omegaconf import OmegaConf
 from torch.distributions import Categorical, Normal
 
-from holobot.constants import *
+from openteach.constants import *
 
 from franka_allegro.models import load_model, init_encoder_info
 from franka_allegro.utils import *

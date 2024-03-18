@@ -7,9 +7,9 @@ import torch
 import torchvision.transforms as T
 
 from gym import spaces
-from holobot_api import DeployAPI
-from holobot.robot.allegro.allegro_kdl import AllegroKDL
-from holobot.utils.network import ZMQCameraSubscriber
+from openteach_api import DeployAPI
+from openteach.robot.allegro.allegro_kdl import AllegroKDL
+from openteach.utils.network import ZMQCameraSubscriber
 from PIL import Image as im
 
 from franka_allegro.tactile_data import TactileImageCurved, TactileCurvedRepresentation

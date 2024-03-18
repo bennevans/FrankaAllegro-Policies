@@ -463,8 +463,8 @@ if __name__ == '__main__':
 	import glob
 	
 	from franka_allegro.utils import load_data
-	from holobot.robot.allegro.allegro_kdl import AllegroKDL
-	from holobot.utils.timer import FrequencyTimer
+	from openteach.robot.allegro.allegro_kdl import AllegroKDL
+	from openteach.utils.timer import FrequencyTimer
 
 	roots = sorted(glob.glob('/home/irmak/Workspace/Holo-Bot/extracted_data/bowl_picking/after_rss/demonstration_*'))
 	data = load_data(roots=roots, demos_to_use=[22,24,26,34,28,29])

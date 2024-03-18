@@ -18,7 +18,7 @@ from torchvision import transforms as T
 from franka_allegro.models import *
 from franka_allegro.utils import *
 from franka_allegro.tactile_data import *
-from holobot.robot.allegro.allegro_kdl import AllegroKDL
+from openteach.robot.allegro.allegro_kdl import AllegroKDL
 from .agent import Agent
 
 class TAVI(Agent):

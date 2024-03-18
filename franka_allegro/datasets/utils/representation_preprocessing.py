@@ -13,7 +13,7 @@ from PIL import Image as im
 from omegaconf import OmegaConf
 from tqdm import tqdm 
 
-from holobot.constants import *
+from openteach.constants import *
 
 from franka_allegro.tactile_data import *
 from franka_allegro.utils import *

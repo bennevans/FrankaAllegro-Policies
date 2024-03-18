@@ -2,7 +2,7 @@
 import numpy as np
 import os 
 
-from holobot.constants import *
+from openteach.constants import *
 
 from .deployer import Deployer
 from franka_allegro.utils import load_data

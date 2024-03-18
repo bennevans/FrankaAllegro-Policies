@@ -3,8 +3,8 @@ import hydra
 import torch 
 import sys
 
-from holobot_api.api import DeployAPI # This import could be changed depending on how it's used
-from holobot.utils.timer import FrequencyTimer
+from openteach_api.api import DeployAPI # This import could be changed depending on how it's used
+from openteach.utils.timer import FrequencyTimer
 from omegaconf import DictConfig
 
 class Deploy:

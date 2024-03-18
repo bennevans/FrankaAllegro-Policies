@@ -16,9 +16,9 @@ from tqdm import tqdm
 from torchvision.datasets.folder import default_loader as loader
 from torchvision import models
 
-from holobot.constants import *
-from holobot.utils.network import ZMQCameraSubscriber
-from holobot.robot.allegro.allegro_kdl import AllegroKDL
+from openteach.constants import *
+from openteach.utils.network import ZMQCameraSubscriber
+from openteach.robot.allegro.allegro_kdl import AllegroKDL
 
 from torchvision.transforms.functional import crop
 

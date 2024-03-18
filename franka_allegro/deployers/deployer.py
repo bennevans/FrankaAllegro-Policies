@@ -4,7 +4,7 @@ import torch
 from abc import ABC, abstractmethod
 from PIL import Image as im
 
-from holobot.utils.network import ZMQCameraSubscriber
+from openteach.utils.network import ZMQCameraSubscriber
 from franka_allegro.utils import *
 from franka_allegro.tactile_data import *
 from franka_allegro.models import init_encoder_info
