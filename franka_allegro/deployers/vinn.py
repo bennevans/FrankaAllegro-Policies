@@ -6,10 +6,11 @@ import os
 import pickle
 import torch
 import torchvision.transforms as T
-
+import hashlib
 
 from omegaconf import OmegaConf
 from tqdm import tqdm 
+from typing import List
 
 from openteach.constants import *
 
@@ -39,17 +40,19 @@ class VINN(Deployer):
         demos_to_use=[0],
         view_num = 0, # View number to use for image
         open_loop = False, # Open loop vinn means that we'll run the demo after getting the first frame from KNN
-        dump_deployment_info = False
+        dump_deployment_info = False,
+        cache_path=".cache",
     ):
 
         super().__init__(
             data_path = data_path, 
             data_representations = data_representations
         )
-
+        self.cache_path = cache_path
         self.set_up_env() 
 
         self.representation_types = representation_types
+        demos_to_use = self._get_demos(demos_to_use)
         self.demos_to_use = demos_to_use
 
         self.device = torch.device('cuda:0')
@@ -102,6 +105,17 @@ class VINN(Deployer):
             nn_dists = []
         )
 
+    def _get_demos(self, demos_to_use: List[int] | str) -> List[int]:
+        if isinstance(demos_to_use, str):
+            if demos_to_use == 'all':
+                all_demos = glob.glob("demonstration_*", root_dir=self.data_path)
+                demos_to_use = [int(demo.split("_")[-1]) for demo in all_demos]
+                return demos_to_use
+            else:
+                raise ValueError('Invalid demos_to_use value')
+        else:
+            return demos_to_use
+
     def _crop_transform(self, image):
         return crop_transform(image, camera_view=self.view_num)
 
@@ -131,9 +145,23 @@ class VINN(Deployer):
                 
         return curr_repr
     
+    def _get_cache_file(self):
+        # TODO: this should be more sophisticated
+        cache_str = self.data_path + "_" + str(self.demos_to_use)
+        cache_id = hashlib.md5(cache_str.encode()).digest().hex()
+        print('cache_id: {}'.format(cache_id))
+        return os.path.join(self.cache_path, f"reps_{cache_id}.npy")
+
     def _get_all_representations(self):
         print('Getting all representations')
 
+        cache_file = self._get_cache_file()
+        if os.path.exists(cache_file):
+            print('Loading representations from cache')
+            self.all_representations = np.load(cache_file)
+            return
+        print(cache_file, "doesn't exist")
+        print("computing representations...")
         self.all_representations = []
 
         print('self.data.keys(): {}'.format(self.data.keys()))
@@ -152,6 +180,10 @@ class VINN(Deployer):
         pbar.close()
 
         self.all_representations = np.stack(self.all_representations, axis=0)
+        print("saving representations to", cache_file)
+        if not os.path.exists(self.cache_path):
+            os.makedirs(self.cache_path)
+        np.save(cache_file, self.all_representations)
 
     def save_deployment(self):
         if self.dump_deployment_info:

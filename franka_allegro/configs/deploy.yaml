@@ -1,10 +1,10 @@
 defaults:
-  - deployer: openloop # This fails almost anywhere! 
+  - deployer: fvinn
 
-visualize: false
+visualize: true
 loop: true
 frequency: 4
 deployment_dump_dir: null
 demo_to_run: 1
 data_representations: ['image', 'allegro', 'franka']
-data_path: /data/sponge_picking_final_3/ #/data/infra_test_dataset/R0B1B_test
+data_path: /data/kinesthetic_task

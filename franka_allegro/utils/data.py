@@ -68,6 +68,8 @@ def load_data(roots, demos_to_use=[], duration=120, representations=['image','ta
 
     print('INSIDE LOAD DATA')
 
+    print("demos to use", demos_to_use)
+
     for demo_id, root in enumerate(roots):
         demo_num = int(root.split('/')[-1].split('_')[-1])
         print('demo_num: {}'.format(demo_num))
